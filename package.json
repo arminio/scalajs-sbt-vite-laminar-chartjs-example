@@ -11,10 +11,13 @@
   "devDependencies": {
     "@scala-js/vite-plugin-scalajs": "^1.0.0",
     "@types/chart.js": "^2.9.29",
+    "@types/human-number": "^1.0.2",
+    "@wolfpigeon/cronstrue": "^0.0.7",
     "typescript": "^4.9.5",
     "vite": "^4.1.0"
   },
   "dependencies": {
-    "chart.js": "^2.9.4"
+    "chart.js": "^2.9.4",
+    "human-number": "^2.0.4"
   }
 }

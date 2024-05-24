@@ -2,9 +2,9 @@ package livechart
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
-
 import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom
+import tonic.HelloWorldView
 
 @main
 def LiveChart(): Unit =
@@ -21,6 +21,7 @@ object Main:
   def appElement(): Element =
     div(
       h1("Live Chart"),
+      HelloWorldView.renderExample(),
       renderDataTable(),
       renderDataChart(),
       renderDataList(),
