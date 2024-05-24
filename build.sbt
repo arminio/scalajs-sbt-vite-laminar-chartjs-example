@@ -28,10 +28,13 @@ lazy val livechart = project.in(file("."))
     libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.4.0",
 
     // Depend on Laminar
-    libraryDependencies += "com.raquo" %%% "laminar" % "15.0.1",
-
+    libraryDependencies ++= List("com.raquo" %%% "laminar" % "15.0.1",
     // Testing framework
-    libraryDependencies += "org.scalameta" %%% "munit" % "0.7.29" % Test,
+      "org.scalameta" %%% "munit" % "0.7.29" % Test,
+      "org.scalatest" %%% "scalatest" % "3.2.18" % Test
+
+    ),
+
 
     // Tell ScalablyTyped that we manage `npm install` ourselves
     externalNpm := baseDirectory.value,

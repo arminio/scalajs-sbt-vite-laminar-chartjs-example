@@ -24,7 +24,7 @@ object HelloWorldView {
     div(
       label("Your name: "),
       input(
-        placeholder := "Enter your name here",
+        placeholder := "Enter your number here",
         onInput.mapToValue --> nameVar
       ),
       p(
