@@ -48,7 +48,7 @@ lazy val livechart = project
     (Test / requireJsDomEnv) := true,
     (installJsdom / version) := "24.0.0"
   )
-  .settings(
-    Test / scalaJSUseTestModuleInitializer := true,
-    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
-  )
+//  .settings(
+//    Test / scalaJSUseTestModuleInitializer := true,
+//    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
+//  )
