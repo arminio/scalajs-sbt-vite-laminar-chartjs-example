@@ -38,3 +38,4 @@ object HelloWorldView {
     // END[hello world]
   }
 }
+
